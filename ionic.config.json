@@ -1,0 +1,7 @@
+{
+  "name": "netndf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
