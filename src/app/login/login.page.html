@@ -1,0 +1,54 @@
+<ion-content class="ion-padding">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <img src="../../assets/icon/ark+net.PNG" alt="Logo" class="logo" />
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Adresse e-mail</ion-label>
+          <ion-icon name="mail-outline" size="small" color="#1775a3"></ion-icon>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <ion-item>
+          <ion-label position="floating">Mot de passe</ion-label>
+          <ion-icon
+            name="lock-closed-outline"
+            size="small"
+            color="#1775a3"
+          ></ion-icon>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row class="connect">
+      <ion-col size="12">
+        <ion-button expand="block" class="connect" (click)="login()"
+          >Se connecter</ion-button
+        >
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <a (click)="forgotPassword()">Mot de passe oublié ?</a>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12" class="touch-container">
+        <ion-label>Se connecter avec TouchID</ion-label>
+        <ion-button
+          class="ion-icon-only ion-align-items-center"
+          (click)="authenticate()"
+        >
+          <ion-icon name="finger-print" size="large"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
